@@ -1,0 +1,116 @@
+body {
+    font-family: 'Bebas Neue', cursive;
+    /* background-color: black; */
+    background: repeating-radial-gradient(farthest-side circle at top left, #001116 20%, #001b23 40%);
+    color: whitesmoke;
+    line-height: 2em;
+}
+
+.main-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    /* margin-bottom: 50px; */
+    letter-spacing: 0.2em;
+    line-height: 1.5em;
+}
+
+hr {
+  border-top: 1.5px solid whitesmoke;
+  margin-bottom: 50px;
+}
+
+li {
+    font-size: 1.1rem;
+    margin: 15px auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#offer-container {
+    font-family: 'Montserrat 400', sans-serif;
+    background-color: rgb(145, 28, 28);
+    padding: 0.001em 0;
+    font-size: 1rem;
+    margin: 35px;
+}
+
+#video-container {
+    height: 400px;
+    margin-bottom: 35px;
+}
+
+.paragraph-container {
+    font-size: 1.25rem;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#course-name-container {
+    padding: 7px;
+    text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px darkgrey;
+    background-color: #092f47b9;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.course-info-container {
+    background-color: rgb(72, 73, 94);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 8px;
+    margin-bottom: 25px;
+}
+
+.paragraph-left {
+    flex: 1 100px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.paragraph-right {
+    flex: 1 100px;
+    padding: 10px;   
+    margin-left: 20px;
+}
+
+.button {
+    font-size: 1.25rem;
+    text-shadow: 1px 1px 2px black, 0 0 25px whitesmoke, 0 0 5px grey;
+    color: whitesmoke;
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 20px 0;
+}
+
+.button-small {
+    font-size: 1.25rem;
+    text-shadow: 1px 1px 2px black, 0 0 25px whitesmoke, 0 0 5px grey;
+    color: whitesmoke;
+    width: 33%;
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 20px 8px;
+}
+
+#breakdown-container {
+    display: flex;
+}
+
+.list-container {
+    border-radius: 15px;
+    background-color: rgb(72, 73, 94);
+    padding: 8px;
+    margin-bottom: 25px;
+}
+
+
+
+
