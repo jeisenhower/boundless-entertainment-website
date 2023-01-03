@@ -17,11 +17,11 @@ const startServer = () => {
 
     app.get('/', (req, res) => {
         //res.sendFile(__dirname + '/views/index.html');
-        res.render('index', {url: 'https://www.youtube.com/watch?v=zkAhFVPgFA8&authuser=0'});
+        res.render('index', {url: 'https://www.youtube.com/embed/keKkoYr2yA8'});
     });
 
 
-    app.listen(port, () => console.log(`App listening on port ${port}`));
+    app.listen(port, () => console.log(`App running at http://localhost:${port}`));
 }
 
 startServer();
