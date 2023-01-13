@@ -11,6 +11,14 @@ body {
     margin: 0 auto;
 }
 
+h1 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 0.9em;
+}
+
 h1, h2, h3 {
     text-align: center;
     /* margin-bottom: 50px; */
@@ -31,7 +39,7 @@ li {
 
 #offer-container {
     font-family: 'Montserrat 400', sans-serif;
-    background-color: rgb(145, 28, 28);
+    background-color: rgba(190, 14, 14, 0.856);
     padding: 0.001em 0;
     font-size: 1rem;
     margin: 35px;
@@ -147,13 +155,15 @@ li {
 .testimonials-container {
     display: flex;
     justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 50px;
 }
 
 .testimonial-left {
     background-color: whitesmoke;
     border-radius: 5px;
     padding: 20px;
-    flex: 6 100px;
+    flex: 4 100px;
     display: flex;
 }
 
@@ -165,8 +175,18 @@ li {
     display: flex;
 }
 
-.testimonial-thumbnail {
+.thumbnail-container {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
     flex: 1 70px;
+}
+
+.testimonial-thumbnail {
+    justify-content: start;
+    border-radius: 60%;
+    border: black;
+    height:20%;
 }
 
 .testimonial-text {
@@ -177,5 +197,33 @@ li {
     line-height: 1.2em;
 }
 
+.examples-container {
+    border: black;
+    justify-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
 
+.example-video {
+    flex: 1 100px;
+    padding: 35px;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: rgb(6, 6, 48);
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Bebas Neue', cursive;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-option {
+    font-size: 1em;
+    /* font-variant: small-caps; */
+}
 
