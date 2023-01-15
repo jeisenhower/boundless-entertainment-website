@@ -176,17 +176,17 @@ li {
 }
 
 .thumbnail-container {
-    padding: 12px;
+    padding-top: 15px;
+    padding-right: 12px;
     display: flex;
     flex-direction: column;
-    flex: 1 70px;
+    flex: 2 20px;
 }
 
 .testimonial-thumbnail {
-    justify-content: start;
     border-radius: 60%;
-    border: black;
-    height:20%;
+    height:25%;
+    width: 100%;
 }
 
 .testimonial-text {
