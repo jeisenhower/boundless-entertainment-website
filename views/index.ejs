@@ -21,7 +21,7 @@
             <div id="video-container">
                 <iframe height="100%" width="100%" src=<%=url%> frameborder="0" frameborder="0" allowfullscreen></iframe>
             </div>
-            <button class="button">ENROLL NOW!</button>
+            <button class="button" onclick="envrollNav()">ENROLL NOW!</button>
             <div class="paragraph-container">
                 <p class="paragraph-left">
                     Unreal Engine for Filmmakers is a value-packed online course designed for anyone looking to learn filmmaking and visual effects in Unreal Engine. We get you from beginner to professional in just 10 days using almost entirely free software and assets.
@@ -97,7 +97,7 @@
                     </div>
                 </div>
             </div>
-            <button class="button-small">ENROLL NOW</button>
+            <button class="button-small" onclick="enrollNav()">ENROLL NOW</button>
             
             <h1 style="margin-top: 50px; margin-bottom: 50px;">TESTIMONIALS</h1>
             <div class="testimonials-container">
@@ -183,5 +183,11 @@
                 <h3>COPYRIGHT &copy; 2023 | ALL RIGHTS RESERVED.</h3>
             </div>
         </footer>
+
+        <script>
+            function enrollNav() {
+                window.location.href = 'https://boundless-resource.com/purchase/?plan=4461';
+            }
+        </script>
     </body>
 </html>
