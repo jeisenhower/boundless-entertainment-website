@@ -24,6 +24,10 @@ nav {
     color: #001116;
 }
 
+.nav-bar ul li {
+    cursor: pointer;
+}
+
 ul li .dropbtn {
     all: unset;
 }
