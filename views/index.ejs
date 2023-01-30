@@ -20,36 +20,58 @@
         <meta property='og:type' content='website'/>
         <title>Unreal Engine for Filmmakers Course | Boundless Entertainment</title>
     </head>
-    <nav class="nav-bar">
-        <div class="logo"></div>
-        <div class="options">
-            <ul>
-                <li><a>HOME</a></li>
-                <li>
-                    <div class="dropdown">
-                        <button onclick="expand()" class="dropbtn">COURSES</button>
-                        <div class="dropdown-content">
-                            <a href="">COURSE CATALOG</a>
-                            <a href="">COURSE BUNDLES</a>
-                            <a href="">MEMBERSHIPS</a>
-                        </div>
-                    </div>
-                </li>
-                <li><a>DASHBOARD</a></li>
-                <li><a>GEMINI</a></li>
-                <li>
-                    <div class="dropdown">
-                        <button onclick="expand()" class="dropbtn">ABOUT US</button>
-                        <div id="myDropdown" class="dropdown-content">
-                            <a href="">ON-SET SERVICES</a>
-                        </div>
-                    </div>
-                </li>
-                <li><a>CONTACT US</a></li>
-            </ul>
-        </div>
-    </nav>
+    
     <body>
+
+
+        <nav class="nav-bar">
+            <div class="logo"></div>
+            <div class="options">
+                <ul>
+                    <div>
+                        <li><a class="nav-link">HOME</a></li>
+                    </div>
+                    <div>
+                        <li>
+                            <div class="dropdown">
+                                <button onclick="expand()" class="dropbtn"><a class="nav-link">COURSES</a></button>
+                                <div class="dropdown-content">
+                                    <a class="nav-link" href="">COURSE CATALOG</a>
+                                    <a class="nav-link" href="">COURSE BUNDLES</a>
+                                    <a class="nav-link" href="">MEMBERSHIPS</a>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    <div>
+                        <li><a class="nav-link">DASHBOARD</a></li>
+                    </div>
+                    <div>
+                        <li><a class="nav-link">GEMINI</a></li>
+                    </div>
+                    <div>
+                        <li>
+                            <div class="dropdown">
+                                <button onclick="expand()" class="dropbtn">ABOUT US</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a class="nav-link" href="">ON-SET SERVICES</a>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    <div>
+                        <li><a class="nav-link">CONTACT US</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+
         <div class="main-container">
             <h1 style="text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px darkgrey;">UNREAL ENGINE FOR FILMMAKERS</h1>
             <div id="offer-container">
@@ -232,6 +254,22 @@
         </footer>
 
         <script>
+            const hamburger = document.querySelector(".hamburger");
+            const optionsMenu = document.querySelector(".options");
+            const navLinks = document.querySelectorAll(".nav-link");
+
+            navLinks.forEach(link => link.addEventListener("click", closeMenu));
+
+            hamburger.addEventListener("click", displayMobileMenu);
+            
+            function displayMobileMenu() {
+                hamburger.classList.toggle("active");
+                optionsMenu.classList.toggle("active");
+            }
+            function closeMenu() {
+                hamburger.classList.remove("active");
+                optionsMenu.classList.remove("active");
+            }
             function enrollNav() {
                 window.location.href = 'https://boundless-resource.com/purchase/?plan=4461';
             }

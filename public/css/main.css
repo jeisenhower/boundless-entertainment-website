@@ -7,11 +7,12 @@ nav {
 .nav-bar {
     width: 100%;
     display: flex;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     margin: 0px;
 }
 
 .nav-bar ul {
+    background-color: whitesmoke;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
@@ -40,7 +41,9 @@ ul li .dropbtn {
     all: unset;
 }
 
-ul li a {
+.dropdown-content a {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: #001116;;
     padding-right: 15px;
@@ -76,11 +79,31 @@ ul li a {
 
 .logo {
     flex: 1;
+    background-color: whitesmoke;
 }
 
 .options {
     flex: 1;
+    background-color: whitesmoke;
 }
+
+
+.hamburger {
+    padding-right: 1.0rem;
+    padding-top: 1.0rem;
+    display: none;
+    background-color: whitesmoke;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: rgb(31, 81, 112);
+}
+
+
 /*------------BODY----------------------*/
 body {
     margin: 0px;
@@ -410,6 +433,114 @@ footer {
 
 /* For mobile devices */
 @media only screen and (max-width: 1290px) {
+
+    /*-------------NAV------------------*/
+
+
+    .hamburger {
+        z-index: 10000;
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Changes the look of the hamburger menu bars*/
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* ------------------------------------------*/
+
+    .logo {
+        flex: 1 100px;
+        height: 7vh;
+    }
+
+    .options {
+        z-index: 100;
+        position: fixed;
+        height: 55vh;
+        width: 50vw;
+        /* left: -100%; */
+        right: 100%;
+        background-color: whitesmoke;
+        /* display: none; */
+        /* display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1 100px; */
+    }
+
+    .options .active {
+        right: 0;
+    }
+
+    .active.options {
+        position: fixed;
+        height: 65vh;
+        width: 55vw;
+        right: 0;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1 100px;
+    }
+
+    .options ul {
+        /* border: black 4.0px solid; */
+        position: fixed;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .nav-bar ul div {
+        /* border: red 3.0px solid; */
+        background-color: whitesmoke;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nav-bar ul div li {
+        display: flex;
+        flex-direction: column;
+        /* padding: 0; */
+        font-size: 1.3rem;
+        align-self: flex-start;
+    }
+
+    .dropdown-content a {
+        text-decoration: none;
+        color: #001116;;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 10px;
+        font-weight: 200;
+        background-color: whitesmoke;
+    }
+
+
+    .dropdown-content {
+        /* position: absolute; */
+        display: flex; 
+        justify-content: space-evenly;
+        flex-direction: column;
+        /* display: none; */
+        box-shadow: none;
+    }
+
+
+    /*------------BODY------------------------*/
 
     .main-container {
         width: 98%;
