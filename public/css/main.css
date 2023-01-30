@@ -11,6 +11,23 @@ nav {
     margin: 0px;
 }
 
+.hamburger {
+    padding-right: 1.0rem;
+    padding-top: 1.0rem;
+    display: none;
+    background-color: whitesmoke;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(31, 81, 112);
+}
+
 .nav-bar ul {
     background-color: whitesmoke;
     display: flex;
@@ -27,16 +44,6 @@ nav {
     color: #001116;
 }
 
-.nav-bar ul li:hover {
-    cursor: pointer;
-    color: rgb(66, 63, 63);
-}
-
-.nav-bar ul li a:hover {
-    cursor: pointer;
-    color: rgb(66, 63, 63);
-}
-
 ul li .dropbtn {
     all: unset;
 }
@@ -50,7 +57,6 @@ ul li .dropbtn {
     padding-left: 15px;
     padding-top: 25px;
     padding-bottom: 10px;
-    font-weight: 00;
 }
 
 .dropdown {
@@ -72,6 +78,16 @@ ul li .dropbtn {
     justify-content: space-between;
 }
 
+.nav-bar ul li:hover {
+    cursor: pointer;
+    color: rgb(66, 63, 63);
+}
+
+.nav-bar ul li a:hover {
+    cursor: pointer;
+    color: rgb(66, 63, 63);
+}
+
 .dropdown .dropdown-content a:hover {
     background-color: whitesmoke;
     color: rgb(66, 63, 63);
@@ -85,22 +101,6 @@ ul li .dropbtn {
 .options {
     flex: 1;
     background-color: whitesmoke;
-}
-
-
-.hamburger {
-    padding-right: 1.0rem;
-    padding-top: 1.0rem;
-    display: none;
-    background-color: whitesmoke;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: rgb(31, 81, 112);
 }
 
 
@@ -504,6 +504,10 @@ footer {
         align-items: flex-start;
     }
 
+    /*.dropbtn {
+        display: none;
+    }*/
+
     .nav-bar ul div {
         /* border: red 3.0px solid; */
         background-color: whitesmoke;
@@ -519,7 +523,7 @@ footer {
         align-self: flex-start;
     }
 
-    .dropdown-content a {
+    /*.dropdown-content a {
         text-decoration: none;
         color: #001116;;
         padding-top: 8px;
@@ -527,17 +531,7 @@ footer {
         padding-left: 10px;
         font-weight: 200;
         background-color: whitesmoke;
-    }
-
-
-    .dropdown-content {
-        /* position: absolute; */
-        display: flex; 
-        justify-content: space-evenly;
-        flex-direction: column;
-        /* display: none; */
-        box-shadow: none;
-    }
+    }*/
 
 
     /*------------BODY------------------------*/
