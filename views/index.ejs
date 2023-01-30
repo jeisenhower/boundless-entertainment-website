@@ -2,14 +2,53 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale"> -->
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/main.css">
-        <title>ULTIMATE Unreal Engine for Filmmakers Bundle</title>
+        <link rel="icon" href="/img/favicon.png">
+        <!-- Website share thumbnail setup -->
+        <meta property='og:title' content='Boundless-Resource.com'/>
+        <meta property='og:image' content='uef_landing_page_img/thumbnail.jpg'/>
+        <meta property='og:description' content='Boundless Entertainment courses give you direct insight into real projects and teach you real solutions for creating cinematic, Hollywood-level visuals.'/>
+        <meta property='og:url' content='https://boundless-resource.com/uef_landing_page.html'/>
+        <meta property='og:image:width' content='1920'/>
+        <meta property='og:image:height' content='816'/>
+        <meta property='og:type' content='website'/>
+        <title>Unreal Engine for Filmmakers Course | Boundless Entertainment</title>
     </head>
+    <nav class="nav-bar">
+        <div class="logo"></div>
+        <div class="options">
+            <ul>
+                <li><a>HOME</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button onclick="expand()" class="dropbtn">COURSES</button>
+                        <div class="dropdown-content">
+                            <a href="">COURSE CATALOG</a>
+                            <a href="">COURSE BUNDLES</a>
+                            <a href="">MEMBERSHIPS</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a>DASHBOARD</a></li>
+                <li><a>GEMINI</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button onclick="expand()" class="dropbtn">ABOUT US</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="">ON-SET SERVICES</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a>CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
     <body>
         <div class="main-container">
             <h1 style="text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px darkgrey;">UNREAL ENGINE FOR FILMMAKERS</h1>
@@ -19,7 +58,7 @@
             </div>
             <hr>
             <div id="video-container">
-                <iframe height="100%" width="100%" src="https://www.youtube.com/embed/gUDjn5TwYmU?rel=0&amp;modestbranding=1&amp;autoplay=1" frameborder="0" frameborder="0" allowfullscreen></iframe>
+                <iframe height="100%" width="100%" src="https://youtube.com/embed/DZYYjXp5Uf0?controls=1&amp;rel=0&amp;modestbranding=1&amp;autoplay=1" allow="autoplay;" frameborder="0" allowfullscreen></iframe>
                 <!-- <iframe src="https://iframe.mediadelivery.net/embed/21811/9b134c0e-0eb3-49ad-a750-1ea3dcd39cf0?autoplay=true" loading="lazy" style="border: none; position: absolute; top: 0; height: 100%; width: 100%;" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe> -->
             </div>
             <button class="button" onclick="enrollNav()">ENROLL NOW</button>
@@ -30,6 +69,9 @@
                 <p class="paragraph-right">
                     For a breakdown of the course, watch the full video above or view the course breakdown below. Enroll now to gain lifetime access to this ever-expanding training and community for just $199.99 (normally $299.99). Offer expires soon!
                 </p>
+            </div>
+            <div>
+
             </div>
             <h1>COURSE BREAKDOWN:</h1>
             <div id="breakdown-container">
