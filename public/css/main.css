@@ -7,7 +7,7 @@ nav {
 .nav-bar {
     width: 100%;
     display: flex;
-    /* background-color: whitesmoke; */
+    background-color: whitesmoke;
     margin: 0px;
 }
 
@@ -443,7 +443,7 @@ footer {
         cursor: pointer;
     }
 
-    /* Changes the look of the hamburger menu bars*/
+    /* -------------Changes the look of the hamburger menu bars------------*/
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
@@ -460,7 +460,7 @@ footer {
 
     .logo {
         flex: 1 100px;
-        height: 7vh;
+        /* height: 7vh; */
     }
 
     .options {
@@ -468,14 +468,8 @@ footer {
         position: fixed;
         height: 55vh;
         width: 50vw;
-        /* left: -100%; */
         right: 100%;
         background-color: whitesmoke;
-        /* display: none; */
-        /* display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        flex: 1 100px; */
     }
 
     .options .active {
@@ -484,7 +478,7 @@ footer {
 
     .active.options {
         position: fixed;
-        height: 65vh;
+        height: 75vh;
         width: 55vw;
         right: 0;
         background-color: whitesmoke;
@@ -509,8 +503,7 @@ footer {
     }*/
 
     .nav-bar ul div {
-        /* border: red 3.0px solid; */
-        background-color: whitesmoke;
+        background-color: whitesmoke;      
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -518,20 +511,10 @@ footer {
     .nav-bar ul div li {
         display: flex;
         flex-direction: column;
-        /* padding: 0; */
         font-size: 1.3rem;
         align-self: flex-start;
-    }
-
-    /*.dropdown-content a {
-        text-decoration: none;
-        color: #001116;;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        padding-left: 10px;
-        font-weight: 200;
         background-color: whitesmoke;
-    }*/
+    }
 
 
     /*------------BODY------------------------*/
@@ -729,5 +712,105 @@ footer {
         padding-bottom: 35px;
     }
 
+
+}
+
+
+@media only screen and (max-width: 550px) {
+
+    /*-------------NAV------------------*/
+
+
+    .hamburger {
+        z-index: 10000;
+        display: block;
+        cursor: pointer;
+    }
+
+    /* -------------Changes the look of the hamburger menu bars------------*/
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* ------------------------------------------*/
+
+    .logo {
+        flex: 1 100px;
+        height: 7vh;
+    }
+
+    .options {
+        z-index: 100;
+        position: fixed;
+        height: 55vh;
+        width: 100vw;
+        /* left: -100%; */
+        right: 100%;
+        background-color: whitesmoke;
+        /* display: none; */
+        /* display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1 100px; */
+    }
+
+    .options .active {
+        right: 0;
+    }
+
+    .active.options {
+        position: fixed;
+        height: 75vh;
+        width: 55vw;
+        right: 0;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1 100px;
+    }
+
+    .options ul {
+        /* border: black 4.0px solid; */
+        position: fixed;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        font-size: 1.0rem;
+    }
+
+    .nav-bar ul div {
+        background-color: whi       
+        /* border: red 3.0px solid; */;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nav-bar ul div li {
+        display: flex;
+        flex-direction: column;
+        /* padding: 0; */
+        font-size: 1.0rem;
+        align-self: flex-start;
+        background-color: whitesmoke;
+    }
+
+}
+
+@media only screen and (max-width: 300px) {
+
+    .nav-bar ul div li {
+        font-size: 0.82rem;
+    }
 
 }
