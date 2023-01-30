@@ -18,14 +18,22 @@ nav {
 }
 
 .nav-bar ul li {
-    flex: 1 25px;
+    flex: 1 50px;
     font-family: 'Bebas Neue', cursive;
+    font-weight: 100;
     font-size: 1.2rem;
+    letter-spacing: 0.3ch;
     color: #001116;
 }
 
-.nav-bar ul li {
+.nav-bar ul li:hover {
     cursor: pointer;
+    color: rgb(66, 63, 63);
+}
+
+.nav-bar ul li a:hover {
+    cursor: pointer;
+    color: rgb(66, 63, 63);
 }
 
 ul li .dropbtn {
@@ -39,6 +47,7 @@ ul li a {
     padding-left: 15px;
     padding-top: 25px;
     padding-bottom: 10px;
+    font-weight: 00;
 }
 
 .dropdown {
@@ -49,7 +58,7 @@ ul li a {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
+    min-width: 190px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 } 
