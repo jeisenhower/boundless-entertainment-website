@@ -131,7 +131,7 @@ body {
     font-family: 'Bebas Neue', cursive;
     background: repeating-radial-gradient(circle farthest-side at top left, #001116 20%, #001b23 30%);
     color: whitesmoke;
-    line-height: 2em;
+    line-height: 1.5em;
 }
 
 .main-container {
@@ -242,6 +242,29 @@ ul li {
     padding: 10px;
     margin-left: 20px;
 }
+
+
+.faq-container {
+    padding: 5px;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.faq-container p {
+    font-size: 0.9em;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.faq-container p a {
+    color: rgb(35, 189, 176);
+    text-decoration: none;
+}
+
 
 .button {
     font-size: 1.25rem;
@@ -564,6 +587,19 @@ footer {
     .button {
         font-size: 1rem;
         text-shadow: 1px 1px 2px black, 0 0 25px whitesmoke, 0 0 5px grey;
+        color: whitesmoke;
+        width: 35%;
+        display: block;
+        margin: 0 auto;
+        background-color: transparent;
+        border: 3px solid white;
+        padding: 20px 0;
+    }
+
+    .button:hover {
+        cursor: pointer;
+        font-size: 1rem;
+        text-shadow: 1px 1px 2px black, 0 0 25px whitesmoke, 0 0 5px rgb(231, 223, 223);
         color: whitesmoke;
         width: 35%;
         display: block;
