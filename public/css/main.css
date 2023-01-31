@@ -96,6 +96,7 @@ ul li .dropbtn {
 .logo {
     flex: 1;
     background-color: whitesmoke;
+    padding: 5px;
 }
 
 .options {
